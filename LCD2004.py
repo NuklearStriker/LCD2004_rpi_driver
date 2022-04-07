@@ -101,16 +101,11 @@ class LCD2004(object):
       self._5x10DOTS = 0x04
       self._5x8DOTS  = 0x00
 
-      # flags for backlight control
-      self.BACKLIGHT   = 0x08
-      self.NOBACKLIGHT = 0x00
-
       # Timing constants
       self.E_PULSE = 0.0005
       self.E_DELAY = 0.0005
       
       self.screenConf = {
-        'backlight'  : self.NOBACKLIGHT, #BACKLIGHTOFF
         'entrySide'  : self.ENTRYLEFT, #ENTRYLEFT
         'entryShift' : self.ENTRYSHIFTDECREMENT, #ENTRYSHIFTDECREMENT
         'blink'      : self.BLINKOFF, #BLINKON
